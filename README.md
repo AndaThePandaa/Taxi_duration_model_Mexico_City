@@ -27,4 +27,4 @@ Once the variables that would be used for the model were selected, the categoric
 
 ## Key_Findings
   
-
+![Alt text for the graph](Heatmap_Average_Speed.png)
