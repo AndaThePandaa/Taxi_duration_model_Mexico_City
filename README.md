@@ -14,6 +14,9 @@ A brief description of the idea behind this project
 
 I wanted to select a dataset that was not something familiar to me but also somehting I could complete in the 24 hours i had. So I chose to do something about my country, Mexico. I found taxi trip data in Kaggle (https://www.kaggle.com/datasets/mnavas/taxi-routes-for-mexico-city-and-quito/code) which sounded like a great opportunity. I had to think about a specific problem to solve. I understood that there have been multiple models that estimate the time duration of taxi trips so I wanted to give my own twist at the end. I would use it to predict if you should move closer to your place of work depending on the rent, and the time and money expended in the trips.
 
+Below a map with 200 samples of the clean dataframe are shown to visualize the locations of the taxi trips.
+![200 clean samples](Trips.png)
+
 ## Methodology
 
 The first hurdle I was present was the fact that I had only 24 hours to complete the assignment, so I decided to only create a model to estimate the time a taxi takes from different starting points and ending points in Mexico City. This left the estimation of the rent to variables the user has to decide. 
@@ -30,7 +33,7 @@ Once the variables that would be used for the model were selected, the categoric
 
 An unfortunate finding that was made when working towards the 'traffic_day' variable was the fact that the data had an issue with its datetime variables. The time was formatted in a 12 hour clock, yet there was no indicator for a.m. or p.m. This meant that using the hour of the day or the traffic during a specific hour of the day would not be useful. Nevertheless, from the heatmap seen below it is certain that in Saturdays and Sundays taxis have in average higher speed which means less traffic.
   
-![Alt text for the graph](Heatmap_Average_Speed.png)
+![Heatmap of Average Speed](Heatmap_Average_Speed.png)
 
 Another key finding was that the 'traffic_day' variable worked like expected for all models except one. In all models the time of the trip increased if the variable indicated that there was traffic, but for the Random Forest the time surprisingly went down. This made it harder for that model to be selected even if it was the highest performer.
 
