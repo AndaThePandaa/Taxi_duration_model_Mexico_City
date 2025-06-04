@@ -6,8 +6,8 @@ A brief description of the idea behind this project
 
 -[Motivation](#Motivation)
 -[Methodology](#Methodology)
--[Key Findings](#Key Findings)
--[Model Performance](#Model Performance)
+-[Key Findings](#Key_Findings)
+-[Model Performance](#Model_Performance)
 
 ## Motivation
 
@@ -25,6 +25,6 @@ In feature engineering there were 4 variables that were created and used in the 
 
 Once the variables that would be used for the model were selected, the categorical variables were one hot encoded and the numerical ones were scaled. These were used to train the 5 following models:  Ridge regression, Lasso Regression, Random Forest, XGBoosted Regressor and a neural network. From the five the one with the best RMSE and good behaviour was selected.
 
-## Key Findings
+## Key_Findings
   
 
